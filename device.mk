@@ -27,3 +27,10 @@ PRODUCT_COPY_FILES += \
 
 # common oneplus6
 $(call inherit-product, device/oneplus/oneplus6/device.mk)
+
+# IFAA (fingerprint support for Alipay)
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
